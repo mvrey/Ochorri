@@ -1,0 +1,34 @@
+.popup {
+   z-index:2;
+   position:absolute;
+   border: 1px solid #333333;
+   text-align:center;
+   background:silver;
+   opacity: .9;
+}
+
+.sectorMenu {
+   width: 140px;
+   height: 230px;
+}
+
+#detailBox {
+    width: 600px;
+    min-height: 370px;
+    /*margin-left: 25%;*/
+}
+
+.close {
+   float:right;
+   margin-right:5px;
+   cursor:pointer;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size:12px;
+   font-weight:bold;
+   color:#FFFFFF;
+   background-color:#666666;
+   width:12px;
+   position:relative;
+   margin-top:-1px;
+   text-align:center;
+}

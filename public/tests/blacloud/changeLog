@@ -1,0 +1,198 @@
+PENDIENTE
+--------------------------------
+- registerView poniendo banderas y avatares predefinidos
+
+(css) pointer-events: none;!!!!!!!!!!!!!!
+
+- Daño a los edificios:
+    * Cuando comienza un combate se pone en BBDD el dateStopped con fecha actual (se pausa) HECHO
+    * Al terminar un edificio (o subir de nivel), se actualiza su remainingHealth al total de su clase.     HECHO
+        Al pausar un edificio, se recalcula su remainingHealth  HECHO
+        Hacer clases de productionMod y battleMod, y que sean contenidos por edificios y unidades respectivamente   HECHO
+        Aplicar modificadores de combate    HECHO
+        Aplicar nuevas producciones         HECHO (no probado)
+        Al terminar la batalla, se actualizan sus dateStarted y dateStopped según su remainingHealth    HECHO
+    * Un edificio no nivelable, en nivel 1 y dañado debe mostrar el martillito
+    * Error al descontar el mantenimiento de edificio destruído/degradado (Battle.class.php line 350)->(Building.class.php line 228)
+
+- Barcos:
+    * Establecer en BD un campo que determine por qué tipos de terreno puede ir (Ground/Water/Coast) y asociarlos a tipos de UnitClass.
+    * Crear unidad de barca construíble en el neolítico.
+    * Los barcos pueden tener capacidad de carga para llevar unidades.
+
+BUGS Y MEJORAS:
+- Comprobar en los request que el sector sea del jugador (quitar el hideSectorMenus de los controles del zoom para pruebas)
+- La puntuación no cuenta las tropas en ruta
+- Posible bug al intentar enviar tropas justo tras construir centro de mando
+- Sigue poniendo que ha ganado el defensor.
+- Notice al enviar tropas (superbug spameador) (NO REPRODUCIBLE)
+- Liderazgo
+- Límites al almacenamiento de recursos: silos y cada edificio aumenta ligeramente los límites de todos los recursos
+
+POSIBLES:
+-Robo de recursos/saqueo
+- Al reiniciar partida, los usuarios se marcan como que no han entrado a ella, y se genera mapa a medida que entran por primera vez,
+en lugar de generarse todos los sectores iniciales juntos
+
+CURRENT:
+- Recuperar cuenta.
+- Mirar si se pueden meter unidades neutrales rapidament.
+- Paginado, ordenación y búsqueda en mensajes (todo por jquery)
+- La vista de recursos no actualiza al investigar
+
+0.1 ALPHA:
+- daño a los edificios
+- unidad scout + tech de espionaje
+- barcos
+- vista general del imperio
+
+
+HECHO
+--------------------------------
+25/08/11
+- Pausar los edificios
+
+24/08/11
+- creado entorno /dev equipoz.org
+* Los recursos se producen en eras anteriores a su visibilidad
+
+23/08/11
+- Reestructuración MVC terminada
+- Panel de control
+- terminadas correcciones de capitolio
+
+12/07/11
+- mantenimiento se actualiza según distancia del capitolio
+
+11/07/11
+- capitolio disponible
+- nuevo capitolio reemplaza al anterior (con alert)
+- al conquistar un sector se borra el capitolio presente
+- sector inicial empieza ya con capitolio y centro de mando
+
+08/07/11
+- El entrenamiento se detiene cuando el sector cambia de propietario
+- la cantidad de recursos se actualiza en JS al cambiar el número de tropas a entrenar
+- alert cuando no hay recursos suficientes
+- jugadores eliminados se tachan en el ranking
+- Último vistazo al mapa ya no muestra info tan innecesariamente detallada
+- mensaje cuando te han eliminado
+- permitir ver movimiento desde sector propio a enemigo/neutral y viceversa
+- mensajes de aviso de eventos
+    - entrenamiento finalizado  HECHO
+    - construcción finalizada   HECHO
+    - tecnología investigada    HECHO
+    - nos atacan                HECHO
+    - tropas han llegado        HECHO
+    - Fin de batalla            HECHO (a falta de eliminar el codigo del request_battle)
+
+06/07/11
+- ordenar los sectores en el select de sector destino
+
+05/07/11
+- metodo más efectivo para hacer tropas
+* bug de no mostrar nombres en RoundLog
+* bug de pasar de era
+
+04/07/11
+* bug gordo de producción a mansalva
+
+16/06/11
+* Mensajes (incompleto)
+* (Script para reiniciar el juego automaticamente)
+* Cuarteles necesarios para entrenar tropas
+* Reajuste de las variables: ralentización masiva
+
+09/06/11
+* cronned no escribe el nombre de la unidad en el log de la ronda de combate (NO REPRODUCIBLE)(arreglado?)
+* Tropas en el limbo cuando es el defensor quien pincha en 'Ver detalles'
+
+07/06/11
+* Las tropas descuentan recursos al partir pero no los suman al llegar (sector neutral)
+* Las tropas descuentan recursos al partir pero no los suman al llegar (sector enemigo)
+* Los costes de las unidades defensoras se suman a los costes del sector en lugar de restarse
+* Doble guión en la producción global
+* Oro no muestra producción total
+
+06/06/11
+BugFix:
+* Error en los costes de batalla al mover tropas para atacar (HECHO)
+* Bug grave con los gastos al producir tropas (HECHO)
+* Las tropas descuentan recursos al partir pero no los suman al llegar (sector aliado) (HECHO)
+
+02/06/11
+BugFix:
+* Las unidades atacan por clase y no por división
+* Las rondas se mezclan entre batallas simultaneas
+
+27/05/11
+Bugfix:
+* Decimales absurdos por todas partes (HECHO)
+* Cáculo incorrecto de coordenadas de más de 2 cifras   (HECHO)
+* Acceder a sectores ajenos jugando con el zoom. (PARCHEADO)
+* Notice produccion oro por decimales absurdos en BD (HECHO)
+* No se puede construír con algún recurso negativo  (HECHO)
+* Límite a la cola de producción de unidades    (HECHO)
+
+26/05/11
+Bugfix:
+* Error en mov. de unidades fuera del mapa visible
+* al enviar tropas a sector popio: al llegar hace batalla   (HECHO)
+* al enviar tropas a sector ajeno, no pone nombre de jugador    (HECHO)
+* mapa no se amplía a tope  (HECHO)
+* No deja enviar refuerzos a un sector que estás defendiendo de bronca en progreso (HECHO)
+
+25/05/11
+- Tecnologías:
+    * Barra de Progreso (donde está y hasta donde llega)    HECHO
+    * Bug de porcentaje al instante HECHO
+    * Aplicar requisitos    HECHO
+    * Efectos de las techs
+        >Sílex  HECHO
+        >Neolítico  HECHO
+        >Agricultura    HECHO
+    * Subida de los costes con el nivel     HECHO
+    * No permitir subir las no-upgradables  HECHO
+
+* Unidades y edificios cuestan recursos para avanzar de era     HECHO
+* Al mejorar edificios y unidades, recalcular los costes de mantenimiento y producciones en el sector   HECHO
+* Puto bug de actualización automática HECHO
+
+01/05/11
+- Generador de mapa
+    * Generador de Mapa HECHO
+    * Asignador de sector inicial   HECHO
+    * Asignador de sector enfocado tras login   HECHO
+    * Guardar último nivel de zoom y sector enfocado    HECHO
+    * Integración con el registro   HECHO
+
+27/04/11
+- Zoom y movimiento en el mapa  HECHO
+- Nombres de sectores y producción de recursos aleatoria    HECHO
+
+23/04/11
+- Registro con mail, nombre del pueblo, bandera y avatar (Permisos para www en /tmp/ , img/avatars e img/flags) HECHO
+
+21/04/11
+- No poder enviar tropas a un sector donde ya hay una batalla ajena     HECHO
+- Las tropas no se pueden enviar A TRAVÉS de un sector donde no haya centro de mando    HECHO
+
+15/04/11
+- Cuando llegan refuerzos, comprobar si existe ya un battleCosts y hacer update de ser así  HECHO
+- Al acabar una batalla, borrar todas las divisiones con cantidad<=0    HECHO
+- Al llegar unidades, que compruebe si ya existe una batalla antes de crear otra    HECHO
+
+13/04/11
+
+- Si al llegar las unidades empieza una batalla, mover los gastos a una nueva tabla HECHO
+- Descontar mantenimiento de unidades eliminadas    HECHO
+- Al acabar la batalla que los gastos se asignen al sector conquistado  HECHO
+- Que haga lo de arriba directamente en el battleDetails_request    HECHO
+- En el map_request, que tenga en cuenta los BattleCosts para la producción total   HECHO
+
+12/04/11
+
+- Cuando acaba una batalla se reinicia la vida de las divisiones    HECHO
+- Arreglar que el tercero en disputa mire batallas  HECHO
+- reducir velocidad de llegada de tropas    HECHO
+- No se pueden mover tropas si no hay un centro de mando en el sector   HECHO

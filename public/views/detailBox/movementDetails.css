@@ -1,0 +1,29 @@
+.movements {
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    clear:both;
+    border: 1px solid gray;
+    margin: 10px;
+    opacity: 1;
+    width: 100%;
+}
+.movements thead {
+    text-decoration: underline;
+}
+.movementRow div {
+    width: 100px;
+    height: 100%;
+    float: left;
+}
+
+#msg {
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    clear:both;
+    border: 1px solid gray;
+    margin: 10px;
+    opacity: 1;
+    width: 100%;
+}

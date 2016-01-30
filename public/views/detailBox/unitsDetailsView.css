@@ -1,0 +1,103 @@
+.unitRow img  {
+    width: 20px;
+    height: 20px;
+}
+
+#request_head {
+    margin: 0 0 0 30%;
+}
+
+#request_head .arrow {
+    border: 1px solid gray;
+    cursor: pointer;
+    float: left;
+}
+
+#request_head #sector_name {
+    width: 200px;
+    font-weight: bold;
+    float: left;
+}
+
+.unitRow {
+    clear: both;
+    text-align: left;
+    opacity: 1;
+    height: 80px;
+}
+
+.unitRow .unitImg {
+    float: left;
+    width: 70px;
+    height: 70px;
+}
+
+.unitTrain span, .unitTop span, .availableUnits, .unitRow hr {
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 1;
+}
+
+.unitColumn {
+    float: left;
+    font-size: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#unitResources {
+    margin-left: 20px;
+    float:left;
+}
+
+.unit_progressBar_container {
+    float:right;
+    width: 100px;
+    height: 15px;
+    border: 1px solid gray;
+    opacity:1;
+}
+.progressBar {
+    width: 0%;
+    height: 100%;
+    background: green repeat-x;
+}
+
+.unitTrain {
+    padding-left: 280px;
+}
+.unitTrain * {
+    float: left;
+    margin-right: 7px;
+}
+
+.unitTop span {
+    float: left;
+}
+
+.trigger {
+    cursor: pointer;
+}
+#MovementBox {
+    font-size: 13px;
+}
+#TrainingQuantity {
+    clear:both;
+    width: 100%;
+    border: 1px solid gray;
+    border-spacing: 0;
+    margin: 5px 0 15px 0;
+}
+#TrainingQuantity  tr td {
+    border: 1px solid gray;
+    text-align: center;
+    width: 17%;
+    cursor: pointer;
+}
+#TrainingQuantity  tr td:hover {
+    color: white;
+}
+#TrainingQuantity  tr td:visited {
+    background-color: blue;
+}

@@ -1,0 +1,25 @@
+#topMenu {
+    height: 40px;
+    width: 100%;
+    border: 1px solid gray;
+}
+
+div.topMenuOption {
+    width: 20%;
+    height: 95%;
+    border: 1px solid black;
+    background: gray;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    float:left;
+    cursor: pointer;
+}
+
+div.topMenuOption:hover {
+    border: 1px inset gray;
+    color: white;
+}
+
+#topMenu {
+}

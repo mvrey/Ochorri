@@ -1,0 +1,105 @@
+#mainFlag {
+    width: 120px;
+    height: 80px;
+    vertical-align: middle;
+    border: 1px solid gray;
+}
+
+#mainAvatar {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    border: 1px solid gray;
+}
+#playerBoxContainer {
+    margin-right: 80px;
+    float: right;
+    width: 200px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+#civ {
+    width: 200px;
+    float: left;
+}
+
+#topBar {
+}
+
+.clear {
+    clear: both;
+}
+
+#playerMenu {
+    width: 161px;
+    height: auto;
+    border: 1px solid gray;
+    position: absolute;
+    margin: -16px 0px 0px 20px;
+    background: gray;
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+#playerMenu ul, .sectorMenu ul, #detailBox ul {
+       line-height: 1.5;
+       width: auto;
+       cursor: pointer;
+       padding: 0;
+}
+
+#playerMenu li, .sectorMenu li, #detailBox li {
+    text-align: center;
+    list-style: none outside none;
+    width: 100%;
+}
+
+#playerMenu li a, .sectorMenu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#playerMenu li:hover, #playerMenu li a:hover, .sectorMenu li:hover, .sectorMenu li a:hover {
+    background: #112233;
+    color: white;
+}
+
+#playerData {
+}
+
+#resourceContainer {
+    width: 700px;
+    float: left;
+}
+
+#resourceContainer img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+#resourceQuantities {
+    float:left;
+    vertical-align: bottom;
+    padding-top: 3px;
+    line-height: 1.8;
+    padding: 0 10px 0 5px;
+}
+
+.totalBalance {
+    font-size: 12px;
+}
+
+#newMessage_icon {
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+#gameOver {
+    background-color: #BBB;
+    font-weight: bold;
+    width: 110%;
+}

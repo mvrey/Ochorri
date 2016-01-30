@@ -1,0 +1,13 @@
+#ranking_table {
+    width: 90%;
+    line-height: 1.2;
+    margin-top: 10px;
+    border: 2px solid gray;
+}
+#ranking_table th {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+#ranking_table td {
+    text-align: center;
+}

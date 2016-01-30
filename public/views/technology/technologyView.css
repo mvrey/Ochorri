@@ -1,0 +1,87 @@
+.technologyRow img  {
+        width: 20px;
+        height: 20px;
+    }
+
+    .technologyRow {
+        clear: both;
+        text-align: left;
+        opacity: 1;
+        margin: 10px;
+        height: 70px;
+        width: 800px;
+    }
+
+    .technologyRow .technologyImg {
+        float: left;
+        width: 70px;
+        height: 70px;
+    }
+
+    .technologyRow span {
+        font-size: 12px;
+    }
+
+    #descriptionContainer {
+        margin-left: 180px;
+        position: relative;
+        width: 500px;
+    }
+
+    .technologyRow .techName, .technologyRow hr {
+        vertical-align: top;
+        font-weight: bold;
+        margin-top: 1;
+        margin-left: 10px;
+        position: relative;
+    }
+
+    .technologyColumn {
+        float: left;
+        font-size: 10px;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
+    #technologyResources {
+        margin-left: 20px;
+        float:left;
+    }
+
+    .progressBar_container {
+        float:right;
+        width: 200px;
+        height: 15px;
+        border: 1px solid gray;
+        opacity:1;
+    }
+    
+
+    .technologyTrain {
+        padding-left: 280px;
+    }
+
+    .technologyTrain * {
+        float: left;
+        margin-right: 7px;
+    }
+.progressBar {
+        width: 0%;
+        height: 100%;
+        background: green repeat-x;
+        margin-right: 0;
+    }
+
+    .plannedBar {
+        width: 0%;
+        height: 100%;
+        background: #9FCFFF repeat-x;
+        margin-right: 0;
+    }
+    .technologyTop span {
+        float: left;
+    }
+
+    .trigger {
+        cursor: pointer;
+    }

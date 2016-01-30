@@ -1,0 +1,64 @@
+.buildingRow img  {
+    width: 20px;
+    height: 20px;
+}
+
+.buildingRow {
+    clear: both;
+    text-align: left;
+    opacity: 1;
+}
+
+.buildingRow .buildingImg {
+    float: left;
+    width: 70px;
+    height: 70px;
+}
+
+.buildingRow span, .buildingRow hr {
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 1;
+}
+
+.buildingColumn {
+    float: left;
+    font-size: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#buildingResources {
+    margin-left: 20px;
+    float:left;
+}
+
+.building_progressBar_container {
+    float:right;
+    width: 100px;
+    height: 15px;
+    border: 1px solid gray;
+    opacity:1;
+}
+.progressBar {
+    width: 0%;
+    height: 100%;
+    background: green repeat-x;
+}
+
+.buildingTrain {
+    padding-left: 280px;
+}
+.buildingTrain * {
+    float: left;
+    margin-right: 7px;
+}
+
+.buildingTop span {
+    float: left;
+}
+
+.trigger {
+    cursor: pointer;
+}

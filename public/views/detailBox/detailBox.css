@@ -1,0 +1,15 @@
+#request_head {
+    margin: 0 0 0 30%;
+}
+
+#request_head .arrow {
+    border: 1px solid gray;
+    cursor: pointer;
+    float: left;
+}
+
+#request_head #sector_name {
+    width: 200px;
+    font-weight: bold;
+    float: left;
+}
