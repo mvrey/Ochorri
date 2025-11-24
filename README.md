@@ -1,6 +1,6 @@
 ## O'Chorri — Browser RTS Engine
 
-> A throwback massively-multiplayer hex conquest saga built with nothing but raw PHP, MySQL, and stubbornness.
+> A throwback multiplayer hex conquest saga built with nothing but raw PHP, MySQL, and stubbornness.
 
 O'Chorri is a persistent-strategy sandbox where players spin up a civilization, carve out sectors on a living hex map, and fight for supremacy with asynchronous battles, tech research, and message-driven diplomacy. The repo captures the entire stack—SQL schema, PHP controllers, AJAX endpoints, front-end widgets, cron workers and admin scripts to reset the world.
 
